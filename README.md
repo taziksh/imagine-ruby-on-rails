@@ -1,24 +1,10 @@
-# README
+# 📸 Imagine
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I built Imagine this weekend for the Shopify Developer Challenge. It is not perfect, but I am proud that I could learn Learn Enough Rails in the past 36 hours to build this.
 
-Things you may want to cover:
+## Design
+I spent time planning before I started building.
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![dbdiagram](https://dbdiagram.io/d/6150176c825b5b014613594f)
+<iframe width="560" height="315" src='https://dbdiagram.io/embed/6150176c825b5b014613594f'> </iframe>
