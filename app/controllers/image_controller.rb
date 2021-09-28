@@ -4,10 +4,16 @@ class ImageController < ApplicationController
   end
 
   def show
-    @image = Image.find(params[:id])
+    @image = Image.find(search_params[:id])
   end
 
   def search
+    if search_params[:search]
+      @image = Image.all()
+    else
+      @parameter = search_params[:search].downcase
+      @image = Image.all.where("lower(caption) LIKE :search", search: "%#{@parameter}%")
+    end
 
   end
 
@@ -16,12 +22,8 @@ class ImageController < ApplicationController
   end
 
   private 
-  def image_params
-      params.require(:image).permit(:caption)
-  end
-
   def search_params
-    params.require(:file_name)
+    params.require(:search)
   end
 
 end

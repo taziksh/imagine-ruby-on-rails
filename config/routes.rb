@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root to: 'image#index'
-  get 'gallery', to: 'image#index', as: 'gallery'
+  get '/', to: 'image#index', as: 'gallery'
   get '/search', to: 'image#search', as: 'search'
   get 'image/show'
   get 'image/new'
